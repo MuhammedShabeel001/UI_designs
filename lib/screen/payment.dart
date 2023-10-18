@@ -15,7 +15,7 @@ class ScreenPayment extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Payments',
+        title:const Text('Payments',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -25,24 +25,24 @@ class ScreenPayment extends StatelessWidget {
         centerTitle: true,
         leading: IconButton(
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => ScreenPrime(),));
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>const ScreenPrime(),));
           }, 
-          icon: Icon(Icons.arrow_back_ios_new_rounded,
+          icon:const Icon(Icons.arrow_back_ios_new_rounded,
           color: Colors.white
           )
         ),
         actions: [IconButton(
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => ScreenInfo(),));
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>const ScreenInfo(),));
           }, 
-          icon: Icon(Icons.info_outline,
+          icon:const Icon(Icons.info_outline,
           color: Colors.white
           )
         )
       ],
     ),
       body:Container(
-        padding: EdgeInsets.only(
+        padding:const EdgeInsets.only(
           top: 10,
           right: 20,
           left: 20
@@ -60,22 +60,22 @@ class ScreenPayment extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5)
               ),
               width: double.infinity,
-              padding: EdgeInsets.all(10),
+              padding:const EdgeInsets.all(10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Transaction Limit',
+                 const Text('Transaction Limit',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold
                       ),
                     ),
-                  Text('A free limit up to which you will receive the online payments directly in your bank',
+                 const Text('A free limit up to which you will receive the online payments directly in your bank',
                     style: TextStyle(
                       fontSize: 16
                       ),
                     ),
-                  SizedBox(height: 10,),
+                 const SizedBox(height: 10,),
                   Container(
                     height: 8,
                     width: double.infinity,
@@ -84,22 +84,22 @@ class ScreenPayment extends StatelessWidget {
                     child: LinearProgressIndicator(
                       value: fixedValue / 100,
                       backgroundColor: const Color.fromARGB(255, 168, 168, 168),
-                      valueColor: AlwaysStoppedAnimation(
-                        const Color.fromARGB(255, 0, 0, 0)),
+                      valueColor:const AlwaysStoppedAnimation(
+                        Color.fromARGB(255, 0, 0, 0)),
                         borderRadius: BorderRadius.circular(5),
                         )
                       ),
-                    Text('36,668 left out of 50,000',
+                   const Text('36,668 left out of 50,000',
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.grey
                         ),
                       ),
-                    SizedBox(height: 10,),
+                   const SizedBox(height: 10,),
                     ElevatedButton(
                       onPressed: (){}, 
                       child: Text('Increase limit',
-                        style: TextStyle(
+                        style:const TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white
                           ),
@@ -115,7 +115,7 @@ class ScreenPayment extends StatelessWidget {
               ),
             ),
 
-            ListTile(
+           const ListTile(
               contentPadding: EdgeInsets.all(0),
               title: Text('Default Method',
                 style: TextStyle(
@@ -136,7 +136,7 @@ class ScreenPayment extends StatelessWidget {
               )
             ),
 
-              ListTile(
+             const ListTile(
                 contentPadding: EdgeInsets.all(0),
               title: Text('Payment Profile',
               style: TextStyle(
@@ -158,9 +158,9 @@ class ScreenPayment extends StatelessWidget {
               )
             ),
 
-              Divider(color: Colors.grey,),
+             const Divider(color: Colors.grey,),
 
-              ListTile(
+             const ListTile(
                 contentPadding: EdgeInsets.all(0),
               title: Text('Payments Overview',
               style: TextStyle(
@@ -191,8 +191,8 @@ class ScreenPayment extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10.0),
                             color: Colors.orange[600]
                           ),
-                          padding: EdgeInsets.all(10),
-                          child: Column(
+                          padding:const EdgeInsets.all(10),
+                          child:const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text('AMOUNT ON HOLD',
@@ -213,7 +213,7 @@ class ScreenPayment extends StatelessWidget {
                         ),
                    ),
 
-                   SizedBox(
+                  const SizedBox(
                   width: 10,
                 ),
 
@@ -225,8 +225,8 @@ class ScreenPayment extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10.0),
                             color: Colors.green[800]
                           ),
-                          padding: EdgeInsets.all(10),
-                          child: Column(
+                          padding:const EdgeInsets.all(10),
+                          child:const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text('AMOUNT RECEIVED',
@@ -248,27 +248,27 @@ class ScreenPayment extends StatelessWidget {
                    ),
                  ],
                ),
-               SizedBox(height: 10,),
+              const SizedBox(height: 10,),
 
-               Text('Transactions',
+              const Text('Transactions',
                style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold),
                 ),
 
-                SizedBox(height: 10,),
+               const SizedBox(height: 10,),
 
                Row(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(
+                    padding:const EdgeInsets.only(
                       left: 10,
                       right: 10,
                       top: 5,
                       bottom: 5
                       ),
                     child: Text('On hold',
-                    style: TextStyle(
+                    style:const TextStyle(
                       color: Color.fromARGB(255, 105, 105, 105),
                       letterSpacing: 2,
                       fontSize: 16),
@@ -278,16 +278,16 @@ class ScreenPayment extends StatelessWidget {
                       ,borderRadius: BorderRadius.circular(100)
                     ),
                   ),
-                  SizedBox(width: 8,),
+                 const SizedBox(width: 8,),
                   Container(
-                    padding: EdgeInsets.only(
+                    padding:const EdgeInsets.only(
                       left: 10,
                       right: 10,
                       top: 5,
                       bottom: 5
                       ),
                     child: Text('Payouts(15)',
-                    style: TextStyle(
+                    style:const TextStyle(
                       color: Colors.white,
                       letterSpacing: 2,
                       fontSize: 16,
@@ -298,16 +298,16 @@ class ScreenPayment extends StatelessWidget {
                       ,borderRadius: BorderRadius.circular(100)
                     ),
                   ),
-                  SizedBox(width: 8,),
+                 const SizedBox(width: 8,),
                   Container(
-                    padding: EdgeInsets.only(
+                    padding:const EdgeInsets.only(
                       left: 10,
                       right: 10,
                       top: 5,
                       bottom: 5
                       ),
                     child: Text('Refunds',
-                    style: TextStyle(
+                    style:const TextStyle(
                       color: Color.fromARGB(255, 105, 105, 105),
                       letterSpacing: 2,
                       fontSize: 16),
@@ -322,25 +322,25 @@ class ScreenPayment extends StatelessWidget {
                 ],
                ),
 
-               SizedBox(height: 5,),
+              const SizedBox(height: 5,),
 
               Expanded(
                 child: Container(
                   width: double.infinity,
                   child: ListView.separated(itemBuilder: (context, index) {
-                    return Container(
+                    return  Container(
                       
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ListTile(
                             leading: Image.asset('asset/daniel-korpai-QhF3YGsDrYk-unsplash.jpg',height: 50,width: 40,),
-                            title: Text('Order #0020132',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                            subtitle: Text('Jul 12,02:06 PM',),
+                            title:const Text('Order #0020132',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                            subtitle:const Text('Jul 12,02:06 PM',),
                             trailing: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Text('₹799',style: TextStyle(color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 15),),
+                               const Text('₹799',style: TextStyle(color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 15),),
                                 Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -353,20 +353,20 @@ class ScreenPayment extends StatelessWidget {
                     ),
                     
                   ),
-                  SizedBox(width: 10,)
+                 const SizedBox(width: 10,)
                   ,
-                  Text('Successful',style: TextStyle(fontSize: 15,color: const Color.fromARGB(255, 101, 101, 101)),),
+                 const Text('Successful',style: TextStyle(fontSize: 15,color: Color.fromARGB(255, 101, 101, 101)),),
                   
                 ],
               )
                               ],
                             ),
                           ),
-                          Text('₹799 deposited to : 58860200000138')
+                         const Text('₹799 deposited to : 58860200000138')
                         ],
                       ),
                     );
-                  }, separatorBuilder: (context, index) => Divider(), itemCount: 10),
+                  }, separatorBuilder: (context, index) =>const Divider(), itemCount: 10),
                 ),
               )
           ],

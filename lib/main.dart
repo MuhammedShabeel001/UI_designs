@@ -1,22 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:ui/screen/store.dart';
-// import 'package:ui/screen/catalogue.dart';
-// import 'package:ui/screen/premium.dart';
-// import 'package:ui/screen/order.dart';
-// import 'package:ui/screen/premium.dart';
-// import 'package:ui/screen/information.dart';
-// import 'package:ui/screen/payment.dart';
-// import 'package:ui/screen/premium.dart';
-// import 'package:ui/screen/store.dart';
-// import 'package:ui/screen/information.dart';
-// import 'package:ui/screen/store.dart';
+
 
 void main() {
-  runApp(uiTest());
+  runApp(const UiTest());
 }
 
-class uiTest extends StatelessWidget {
-  const uiTest({super.key});
+class UiTest extends StatelessWidget {
+  const UiTest({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +20,7 @@ class uiTest extends StatelessWidget {
         useMaterial3: true
       ),
       debugShowCheckedModeBanner: false,
-      home: ScreenManage(),
+      home:const ScreenManage(),
     );
   }
 }

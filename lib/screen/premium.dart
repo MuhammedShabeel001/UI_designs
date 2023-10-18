@@ -9,7 +9,7 @@ class ScreenPrime extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Dukaan Premium',
+        title:const Text('Dukaan Premium',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -19,9 +19,9 @@ class ScreenPrime extends StatelessWidget {
         centerTitle: true,
         leading: IconButton(
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => ScreenOrder(),));
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>const ScreenOrder(),));
           }, 
-          icon: Icon(Icons.arrow_back_ios_new_rounded,
+          icon:const Icon(Icons.arrow_back_ios_new_rounded,
           color: Colors.white
           )
         ),
@@ -57,11 +57,11 @@ class ScreenPrime extends StatelessWidget {
               child: ListView(
                 children: [
                   Container(
-                    padding: EdgeInsets.all(20),
+                    padding:const EdgeInsets.all(20),
                     width: double.infinity,
                     decoration: BoxDecoration(
                       border: Border.all(
-                          color: Color.fromARGB(255, 163, 163, 163),
+                          color:const Color.fromARGB(255, 163, 163, 163),
                           width: 1.5,
                           style: BorderStyle.solid
                         ),
@@ -79,13 +79,13 @@ class ScreenPrime extends StatelessWidget {
                               width: 50,
                               // color: Colors.teal,
                               decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 0, 100, 182),
+                                color:const Color.fromARGB(255, 0, 100, 182),
                                 borderRadius: BorderRadius.circular(25)
                               ),
-                              child: Icon(Icons.shopping_bag,color: Colors.white,),
+                              child:const Icon(Icons.shopping_bag,color: Colors.white,),
                             ),
-                            SizedBox(width: 10),
-                            Column(
+                           const SizedBox(width: 10),
+                           const Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text('dukaan',style: TextStyle(fontSize: 30,fontWeight: FontWeight.w700),),
@@ -95,22 +95,22 @@ class ScreenPrime extends StatelessWidget {
                             )
                           ],
                         ),
-                        SizedBox(height: 10,),
+                       const SizedBox(height: 10,),
 
-                        Text('Get Dukaan Premium for just',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-                        Text('₹4,999/year',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20)),
-                        Text('All the advanced features for scaling your',style: TextStyle(color: const Color.fromARGB(255, 108, 108, 108)),),
-                        Text('business',style: TextStyle(color: const Color.fromARGB(255, 108, 108, 108)))
+                       const Text('Get Dukaan Premium for just',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+                       const Text('₹4,999/year',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20)),
+                       const Text('All the advanced features for scaling your',style: TextStyle(color: Color.fromARGB(255, 108, 108, 108)),),
+                       const Text('business',style: TextStyle(color:  Color.fromARGB(255, 108, 108, 108)))
                       ],
                     ),
 
                   ),
-                  SizedBox(height: 10,),
-                  Text('Features',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold),),
+                 const SizedBox(height: 10,),
+                 const Text('Features',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold),),
 
 
                   ListTile(
-                    contentPadding: EdgeInsets.all(0),
+                    contentPadding:const EdgeInsets.all(0),
                     leading: Container(
                       height:50 ,
                       width: 50,
@@ -122,14 +122,14 @@ class ScreenPrime extends StatelessWidget {
                         ),
                         borderRadius: BorderRadius.circular(25)
                       ),
-                      child: Icon(Icons.language_rounded,color: Colors.blue,),
+                      child:const Icon(Icons.language_rounded,color: Colors.blue,),
                     ),
-                    title: Text('Custom domain name',style: TextStyle(fontWeight: FontWeight.bold),),
-                    subtitle: Text('Get your own domain and build your brand on the internet',style: TextStyle(fontSize: 15),),
+                    title:const Text('Custom domain name',style: TextStyle(fontWeight: FontWeight.bold),),
+                    subtitle:const Text('Get your own domain and build your brand on the internet',style: TextStyle(fontSize: 15),),
                   ),
 
                   ListTile(
-                    contentPadding: EdgeInsets.all(0),
+                    contentPadding:const EdgeInsets.all(0),
                     leading: Container(
                       height:50 ,
                       width: 50,
@@ -141,14 +141,14 @@ class ScreenPrime extends StatelessWidget {
                         ),
                         borderRadius: BorderRadius.circular(25)
                       ),
-                      child: Icon(Icons.verified_outlined,color: Colors.blue,),
+                      child:const Icon(Icons.verified_outlined,color: Colors.blue,),
                     ),
-                    title: Text('Verified seller badge',style: TextStyle(fontWeight: FontWeight.bold),),
-                    subtitle: Text('Get green verified badge under your store name and build trust.',style: TextStyle(fontSize: 15),),
+                    title:const Text('Verified seller badge',style: TextStyle(fontWeight: FontWeight.bold),),
+                    subtitle:const Text('Get green verified badge under your store name and build trust.',style: TextStyle(fontSize: 15),),
                   ),
 
                   ListTile(
-                    contentPadding: EdgeInsets.all(0),
+                    contentPadding:const EdgeInsets.all(0),
                     leading: Container(
                       height:50 ,
                       width: 50,
@@ -160,14 +160,14 @@ class ScreenPrime extends StatelessWidget {
                         ),
                         borderRadius: BorderRadius.circular(25)
                       ),
-                      child: Icon(Icons.computer_outlined,color: Colors.blue,),
+                      child:const Icon(Icons.computer_outlined,color: Colors.blue,),
                     ),
-                    title: Text('Dukaan for PC',style: TextStyle(fontWeight: FontWeight.bold),),
-                    subtitle: Text('Access all the exclusive premium features on Dukaan for PC',style: TextStyle(fontSize: 15),),
+                    title:const Text('Dukaan for PC',style: TextStyle(fontWeight: FontWeight.bold),),
+                    subtitle:const Text('Access all the exclusive premium features on Dukaan for PC',style: TextStyle(fontSize: 15),),
                   ),
 
                   ListTile(
-                    contentPadding: EdgeInsets.all(0),
+                    contentPadding:const EdgeInsets.all(0),
                     leading: Container(
                       height:50 ,
                       width: 50,
@@ -179,10 +179,10 @@ class ScreenPrime extends StatelessWidget {
                         ),
                         borderRadius: BorderRadius.circular(25)
                       ),
-                      child: Icon(Icons.headset_mic_outlined,color: Colors.blue,),
+                      child:const Icon(Icons.headset_mic_outlined,color: Colors.blue,),
                     ),
-                    title: Text('Priority support',style: TextStyle(fontWeight: FontWeight.bold),),
-                    subtitle: Text('Get your queestions resolved with our priority customer support',style: TextStyle(fontSize: 15),),
+                    title:const Text('Priority support',style: TextStyle(fontWeight: FontWeight.bold),),
+                    subtitle:const Text('Get your queestions resolved with our priority customer support',style: TextStyle(fontSize: 15),),
                   ),
 
                   Divider(
@@ -190,9 +190,9 @@ class ScreenPrime extends StatelessWidget {
                     color: Colors.grey[350],
                   ),
 
-                  Text('What is Dukaan Premium?',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                 const Text('What is Dukaan Premium?',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
 
-                  SizedBox(height: 10,),
+                 const SizedBox(height: 10,),
 
                   //youtube
                   Container(
@@ -206,7 +206,7 @@ class ScreenPrime extends StatelessWidget {
                       
                     ),
                   ),
-                  SizedBox(height: 20,)
+                 const SizedBox(height: 20,)
 
                   
                 ],

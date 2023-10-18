@@ -9,7 +9,7 @@ class ScreenCategory extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Catalogue',
+        title:const Text('Catalogue',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -20,9 +20,9 @@ class ScreenCategory extends StatelessWidget {
         actions: [
           IconButton(
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => ScreenManage(),));
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>const ScreenManage(),));
           }, 
-          icon: Icon(Icons.search,
+          icon:const Icon(Icons.search,
           color: Colors.white
           )
         ),
@@ -42,12 +42,12 @@ class ScreenCategory extends StatelessWidget {
                 Flexible(
                   flex: 1,fit: FlexFit.tight,
                   child: Container(
-                    padding: EdgeInsets.only(top: 10),
+                    padding:const EdgeInsets.only(top: 10),
                     // height: 10,
                     child: Column(
                       children: [
-                        Text('Products',style: TextStyle(fontSize: 18,color: Colors.white),),
-                        SizedBox(height: 8,),
+                       const Text('Products',style: TextStyle(fontSize: 18,color: Colors.white),),
+                       const SizedBox(height: 8,),
                         Container(height: 5,color: Colors.grey[200],)
                       ],
                     ),
@@ -56,12 +56,12 @@ class ScreenCategory extends StatelessWidget {
                 Flexible(
                   flex: 1,fit: FlexFit.tight,
                   child: Container(
-                    padding: EdgeInsets.only(top: 10),
+                    padding:const EdgeInsets.only(top: 10),
                     // height: 10,
                     child: Column(
                       children: [
-                        Text('Categories',style: TextStyle(fontSize: 18,color: Colors.white),),
-                        SizedBox(height: 8,),
+                       const Text('Categories',style: TextStyle(fontSize: 18,color: Colors.white),),
+                       const SizedBox(height: 8,),
                         Container(height: 5,)
                       ],
                     ),
@@ -75,18 +75,18 @@ class ScreenCategory extends StatelessWidget {
             
                 child: Container(
                   color: Colors.grey[200],
-                  padding: EdgeInsets.only(right: 10,left: 10),
+                  padding:const EdgeInsets.only(right: 10,left: 10),
                   width: double.infinity,
                   child:ListView.builder(
                     itemCount: 8,
                     itemBuilder: (context, index) {
                       return Column(
                         children: [
-                          SizedBox(height: 10,),
+                         const SizedBox(height: 10,),
                           Container(
                             width: double.infinity,
                             // height: 250,
-                            padding: EdgeInsets.only(right: 10,left: 10,bottom: 10),
+                            padding:const EdgeInsets.only(right: 10,left: 10,bottom: 10),
                             // color: Colors.orange,
                             decoration: BoxDecoration(
                               border: Border.all(
@@ -121,7 +121,7 @@ class ScreenCategory extends StatelessWidget {
                                             
                                             
                                             
-                                            padding: EdgeInsets.only(
+                                            padding:const EdgeInsets.only(
                                                 top: 10,
                                                 bottom: 10,
                                                 // left: 10,
@@ -136,16 +136,16 @@ class ScreenCategory extends StatelessWidget {
                                             child: Column(
                                               children: [
                                                 ListTile(
-                                                  title: Text('Explore | Men | Black',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
-                                                  contentPadding: EdgeInsets.all(0),
-                                                  trailing: IconButton(onPressed: (){}, icon: Icon(Icons.more_vert,color: Colors.grey,)),
-                                                  subtitle: Text('1 piece'),
+                                                  title:const Text('Explore | Men | Black',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                                                  contentPadding:const EdgeInsets.all(0),
+                                                  trailing: IconButton(onPressed: (){}, icon:const Icon(Icons.more_vert,color: Colors.grey,)),
+                                                  subtitle:const Text('1 piece'),
                                                 ),
 
                                                 ListTile(
-                                                  contentPadding: EdgeInsets.all(0),
-                                                  title: Text('₹799',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
-                                                  subtitle: Text('In stoke',style: TextStyle(color: Colors.green),),
+                                                  contentPadding:const EdgeInsets.all(0),
+                                                  title:const Text('₹799',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
+                                                  subtitle:const Text('In stoke',style: TextStyle(color: Colors.green),),
                                                    trailing: Switch(
                           value: true,
                           onChanged: (value){},
@@ -160,13 +160,13 @@ class ScreenCategory extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                  Divider(),
+                                 const Divider(),
 
                                    Container(
                                     
                                     child: Column(
                                       children: [
-                                        TextButton.icon(onPressed: (){}, icon: Icon(Icons.share_outlined,color: const Color.fromARGB(255, 21, 21, 21),), label: Text('Share',style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),)),
+                                        TextButton.icon(onPressed: (){}, icon:const Icon(Icons.share_outlined,color:  Color.fromARGB(255, 21, 21, 21),), label:const Text('Share',style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),)),
                                       ],
                                     ),
                                     // color: const Color.fromARGB(255, 54, 184, 244),

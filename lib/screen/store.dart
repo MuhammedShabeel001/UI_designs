@@ -11,15 +11,15 @@ class ScreenManage extends StatelessWidget {
         backgroundColor: Colors.black,
         actions: [
           IconButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => ScreenPayment()));
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>const ScreenPayment()));
           }, 
-            icon: Icon(
+            icon:const Icon(
               Icons.arrow_forward_ios_rounded,
               color: Colors.white,
             )
           )
         ],
-        title: Text('Manage Store',
+        title:const Text('Manage Store',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -29,7 +29,7 @@ class ScreenManage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Container(
-        padding: EdgeInsets.all(10.0),
+        padding:const EdgeInsets.all(10.0),
         child: Column(
           children: [
             Row(
@@ -43,9 +43,9 @@ class ScreenManage extends StatelessWidget {
                     // height: 130,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      color: Color.fromARGB(255, 221, 221, 221)
+                      color: const Color.fromARGB(255, 221, 221, 221)
                     ),
-                    padding: EdgeInsets.all(10),
+                    padding:const EdgeInsets.all(10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -54,21 +54,21 @@ class ScreenManage extends StatelessWidget {
                           width: 40,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5),
-                            color: Color.fromARGB(255, 251, 103, 11)
+                            color:const Color.fromARGB(255, 251, 103, 11)
                           ),
-                          child: Icon(Icons.volume_up_outlined,
+                          child:const Icon(Icons.volume_up_outlined,
                           color: Colors.white,),
                         ),
-                        SizedBox(
+                      const  SizedBox(
                           height: 5,
                         ),
-                        Text('Marketing',
+                      const  Text('Marketing',
                           style: TextStyle(fontSize: 20,
                             fontWeight: FontWeight.bold,
                             letterSpacing: 3,
                           ),
                         ),
-                        Text('Designs',
+                      const  Text('Designs',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -79,7 +79,7 @@ class ScreenManage extends StatelessWidget {
                     ),
                   )
                 ),
-                SizedBox(
+               const SizedBox(
                   width: 10,
                 ),
                 Flexible(
@@ -88,9 +88,9 @@ class ScreenManage extends StatelessWidget {
 
                   //Online Payments
                   child: Container(
-                    padding: EdgeInsets.all(10),
+                    padding:const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 221, 221),
+                      color:const Color.fromARGB(255, 221, 221, 221),
                       borderRadius: BorderRadius.circular(10)
                     ),
                     // height: 130,
@@ -104,20 +104,20 @@ class ScreenManage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(5),
                             color: Colors.green
                           ),
-                          child: Icon(Icons.monetization_on_outlined,
+                          child:const Icon(Icons.monetization_on_outlined,
                           color: Colors.white,),
                         ),
-                        SizedBox(
+                       const SizedBox(
                           height: 5,
                         ),
-                        Text('Online',
+                       const Text('Online',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 3,
                           ),
                         ),
-                        Text('Payments',
+                       const Text('Payments',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -130,7 +130,7 @@ class ScreenManage extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+           const SizedBox(
               height: 10,
             ),
           Row(
@@ -142,9 +142,9 @@ class ScreenManage extends StatelessWidget {
 
                   //Discount Coupons 
                   child: Container(
-                    padding: EdgeInsets.all(10),
+                    padding:const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 221, 221),
+                      color: const Color.fromARGB(255, 221, 221, 221),
                       borderRadius: BorderRadius.circular(10)
                     ),
                     // height: 130,
@@ -156,22 +156,22 @@ class ScreenManage extends StatelessWidget {
                           width: 40,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5),
-                            color: Color.fromARGB(255, 195, 157, 61)
+                            color:const Color.fromARGB(255, 195, 157, 61)
                           ),
-                          child: Icon(Icons.percent,
+                          child:const Icon(Icons.percent,
                           color: Colors.white,),
                         ),
-                        SizedBox(
+                       const SizedBox(
                           height: 5,
                         ),
-                        Text('Discount',
+                      const  Text('Discount',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 3,
                           ),
                         ),
-                        Text('Coupons',
+                       const Text('Coupons',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -182,7 +182,7 @@ class ScreenManage extends StatelessWidget {
                     ),
                   )
                 ),
-                SizedBox(
+               const SizedBox(
                   width: 10,
                 ),
                 Flexible(
@@ -191,9 +191,9 @@ class ScreenManage extends StatelessWidget {
 
                   //My customers
                   child: Container(
-                    padding: EdgeInsets.all(10),
+                    padding:const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 221, 221),
+                      color:const Color.fromARGB(255, 221, 221, 221),
                       borderRadius: BorderRadius.circular(10)
                     ),
                     // height: 130,
@@ -205,22 +205,22 @@ class ScreenManage extends StatelessWidget {
                           width: 40,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5),
-                            color: Color.fromARGB(255, 29, 143, 192)
+                            color:const Color.fromARGB(255, 29, 143, 192)
                           ),
-                          child: Icon(Icons.group_outlined,
+                          child:const Icon(Icons.group_outlined,
                           color: Colors.white,),
                         ),
-                        SizedBox(
+                       const SizedBox(
                           height: 5,
                         ),
-                        Text('My',
+                       const Text('My',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 3,
                           ),
                         ),
-                        Text('Customers',
+                       const Text('Customers',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -233,7 +233,7 @@ class ScreenManage extends StatelessWidget {
                 )
               ],
             ), 
-            SizedBox(
+           const SizedBox(
               height: 10,
             ),
           Row(
@@ -245,9 +245,9 @@ class ScreenManage extends StatelessWidget {
 
                   //Store qr code
                   child: Container(
-                    padding: EdgeInsets.all(10),
+                    padding:const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 221, 221),
+                      color:const Color.fromARGB(255, 221, 221, 221),
                       borderRadius: BorderRadius.circular(10)
                     ),
                     // height: 130,
@@ -261,20 +261,20 @@ class ScreenManage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(5),
                             color: const Color.fromARGB(255, 90, 90, 90)
                           ),
-                          child: Icon(Icons.qr_code_scanner_rounded,
+                          child:const Icon(Icons.qr_code_scanner_rounded,
                           color: Colors.white,),
                         ),
-                        SizedBox(
+                       const SizedBox(
                           height: 5,
                         ),
-                        Text('Store QR',
+                       const Text('Store QR',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 3,
                           ),
                         ),
-                        Text('Code',
+                       const Text('Code',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -285,18 +285,17 @@ class ScreenManage extends StatelessWidget {
                     ),
                   )
                 ),
-                SizedBox(
+               const SizedBox(
                   width: 10,
                 ),
                 Flexible(
                   flex: 1,
                   fit: FlexFit.tight,
 
-                  //Extra Charges
                   child: Container(
-                    padding: EdgeInsets.all(10),
+                    padding:const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 221, 221),
+                      color:const Color.fromARGB(255, 221, 221, 221),
                       borderRadius: BorderRadius.circular(10)
                     ),
                     // height: 130,
@@ -308,22 +307,22 @@ class ScreenManage extends StatelessWidget {
                           width: 40,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5),
-                            color: Color.fromARGB(255, 103, 54, 182)
+                            color:const Color.fromARGB(255, 103, 54, 182)
                           ),
-                          child: Icon(Icons.money,
+                          child:const Icon(Icons.money,
                           color: Colors.white,),
                         ),
-                        SizedBox(
+                       const SizedBox(
                           height: 5,
                         ),
-                        Text('Extra',
+                       const Text('Extra',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 3,
                           ),
                         ),
-                        Text('Charges',
+                       const Text('Charges',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -336,7 +335,7 @@ class ScreenManage extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+           const SizedBox(
               height: 10,
             ),
           Row(
@@ -347,9 +346,9 @@ class ScreenManage extends StatelessWidget {
                   fit: FlexFit.tight,
                   //Order form 
                   child: Container(
-                    padding: EdgeInsets.all(10),
+                    padding:const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 221, 221),
+                      color:const Color.fromARGB(255, 221, 221, 221),
                       borderRadius: BorderRadius.circular(10)
                     ),
                     // height: 130,
@@ -365,9 +364,9 @@ class ScreenManage extends StatelessWidget {
                                 width: 40,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
-                                  color: Color.fromARGB(255, 202, 74, 195)
+                                  color:const Color.fromARGB(255, 202, 74, 195)
                                 ),
-                                child: Icon(Icons.format_list_bulleted_rounded,
+                                child:const Icon(Icons.format_list_bulleted_rounded,
                                 color: Colors.white,),
                               ),
                             ),
@@ -377,9 +376,9 @@ class ScreenManage extends StatelessWidget {
                             Flexible(
                               flex: 1,
                               child: Container(
-                                padding: EdgeInsets.all(5),
+                                padding:const EdgeInsets.all(5),
                                 child: Text('NEW',
-                                  style: TextStyle(
+                                  style:const TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 12,
                                     color: Colors.white
@@ -393,16 +392,16 @@ class ScreenManage extends StatelessWidget {
                             )
                           ],
                         ),
-                        SizedBox(
+                       const SizedBox(
                           height: 10,
                         ),
-                        Text('Order',style: TextStyle(
+                       const Text('Order',style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 3,
                           ),
                         ),
-                        Text('Form',style: TextStyle(
+                       const Text('Form',style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 3,
@@ -412,7 +411,7 @@ class ScreenManage extends StatelessWidget {
                     ), 
                   )
                 ),
-                SizedBox(
+               const SizedBox(
                   width: 20,
                 ),
                 Flexible(
@@ -421,11 +420,11 @@ class ScreenManage extends StatelessWidget {
 
                   //To add More
                   child: Container(
-                    padding: EdgeInsets.all(10),
+                    padding:const EdgeInsets.all(10),
                     
                     height: 130,
                     // color: const Color.fromARGB(255, 40, 255, 7),
-                    child: Column(
+                    child:const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       
                     ),
